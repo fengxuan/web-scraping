@@ -4,8 +4,9 @@
   "description": "Web Scraping with node.",
   "main": "bookList.js",
   "dependencies": {
-    "axios": "^0.17.1",
-    "cheerio": "^1.0.0-rc.2"
+    "axios": "^1.7.4",
+    "cheerio": "^1.0.0",
+    "string-strip-html": "^13.4.8"
   },
   "scripts": {
     "books": "node bookList.js",
@@ -18,5 +19,6 @@
     "axios"
   ],
   "author": "Aurel Kurtula",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
