@@ -11,7 +11,7 @@ function fetchAndProcessUrl(url, filename) {
 
         const $ = cheerio.load(html);
         const richMediaContent = $(".rich_media_content")
-          .find("p")
+          .find("p, span")
           .map((_, el) => $(el).text())
           .get()
           .join("\n");
